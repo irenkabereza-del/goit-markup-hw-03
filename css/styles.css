@@ -61,6 +61,8 @@ color: #434455;
 }
 .section-hero {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .title-hero {
 font-size: 56px;
@@ -168,4 +170,53 @@ h1, h2, h3, p {
     width: 100%;
     max-width: 1158px;
     margin: 0 auto;
+}
+page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-nav {
+    display: flex;
+    align-items: center; 
+}
+.nav-list {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+}
+.contacts-list {
+   display: flex; 
+    gap: 40px;
+}
+.section-hero{
+    padding-top: 188px; та padding-bottom: 188px;
+}
+.title-hero {
+    max-width: 496px;
+}
+.form-button {
+    display: block;
+     min-width: 169px;
+height: 56px;
+border: none;
+border-radius: 4px;
+background: #4d5ae5;
+margin: 0 auto;
+cursor: pointer;
+}
+.section-advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.advantages {
+    visibility: hidden;
+}
+.advantages-list {
+    display: flex; 
+    gap: 24;
+}
+.advantages-item {
+    width: calc((100% - 72px) / 4);
+}
+.title-advantages {
+    margin-bottom: 8px;
 }
