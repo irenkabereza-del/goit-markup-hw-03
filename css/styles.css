@@ -171,9 +171,7 @@ h1, h2, h3, p {
     max-width: 1158px;
     margin: 0 auto;
 }
-page-header {
-    border-bottom: 1px solid #e7e9fc;
-}
+
 .header-nav {
     display: flex;
     align-items: center; 
@@ -212,7 +210,7 @@ cursor: pointer;
 }
 .advantages-list {
     display: flex; 
-    gap: 24;
+    gap: 24px;
 }
 .advantages-item {
     width: calc((100% - 72px) / 4);
