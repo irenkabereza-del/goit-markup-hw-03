@@ -6,7 +6,7 @@ body {
 ul, ol {
     list-style: none;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
 }
 img {
     display: block;
@@ -25,6 +25,8 @@ color: #4d5ae5;
 }
 .header-logo {
     margin-right: 76px;
+    padding: 24px 0;
+    
 }
 .header-logo .logo-part {
   color: #2e2f42; 
@@ -35,7 +37,9 @@ margin-bottom: 16px;
 .footer-logo .logo-part {
 color: #f4f4fd;
 }
-.nav-link{
+.nav-link {
+display: block;
+padding: 24px 0;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -48,13 +52,9 @@ color: #2e2f42;
 }
 .contacts{
     font-style: normal;
+    margin-left: auto;
 }
-.contacts-link {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-}
+
 .contacts-link:hover,
 .contacts-link:focus {
     color: #404bbf;
@@ -120,6 +120,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .description-proffesion {
@@ -144,6 +145,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 .description-portfolio {
 font-weight: 400;
@@ -162,16 +164,21 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
 }
-h1, h2, h3, p {
+h1, h2, h3,h4, h5, h6, p {
     margin: 0;
 }
-.page-header-container {
-    display: flex;
-    width: 100%;
+.container {  
     max-width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
 }
-
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
 .header-nav {
     display: flex;
     align-items: center; 
@@ -182,14 +189,25 @@ h1, h2, h3, p {
     gap: 40px;
 }
 .contacts-list {
-   display: flex; 
+   display: flex;
+    align-items: center; 
     gap: 40px;
 }
+.contacts-link {
+display: block;
+padding: 24px 0;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
 .section-hero{
-    padding-top: 188px; та padding-bottom: 188px;
+    padding-top: 188px; 
+    padding-bottom: 188px;
 }
 .title-hero {
     max-width: 496px;
+    margin: 0 auto;
 }
 .form-button {
     display: block;
@@ -200,14 +218,13 @@ border-radius: 4px;
 background: #4d5ae5;
 margin: 0 auto;
 cursor: pointer;
+margin-top: 48px;
 }
 .section-advantages {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.advantages {
-    visibility: hidden;
-}
+
 .advantages-list {
     display: flex; 
     gap: 24px;
@@ -218,3 +235,59 @@ cursor: pointer;
 .title-advantages {
     margin-bottom: 8px;
 }
+
+.our-team {
+    padding: 120px 0;
+}
+.title-our-team {
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+    max-width: 1128px;
+    margin: 0 auto;
+   
+}
+.personal-information {
+     width: calc((100% - 72px) / 4);
+     border-radius: 0 0 4px 4px;
+}
+.personal-information-container {
+    padding: 32px 0;
+}
+.section-our-portfolio {
+    padding: 120px 0;
+}
+.title-portfolio {
+    margin-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    max-width: 1128px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-items {
+    width: calc((100% - 48px) / 3);
+}
+
+.description-portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.page-footer {
+padding: 100px 0;
+}
+ .logo footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+ }
+ .description-footer {
+    max-width: 264px;    
+ }
+
